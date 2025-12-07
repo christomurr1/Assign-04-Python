@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # Created By: Christopher El-Murr
-# Date: 11 14, 2025
+# Date: 12,01, 2025
 # This program uses a for loop calculate the factors of the number
 
 
@@ -14,14 +14,11 @@ def main():
         else:
             print(f"Factors of {num} are:")
 
-        # Use a while loop to check for factors
-        i = 1
-        while i <= num:
-            # If remainder is 0, i is a factor
-            if num % i == 0:
-                print(i)
-            # Move to the next number
-            i += 1
+            # Use a for loop to check for factors
+            for i in range(1, num + 1):
+                # If remainder is 0, i is a factor
+                if num % i == 0:
+                    print(i)
 
     except ValueError:
         # Handles the case where the user enters something that's not an integer
